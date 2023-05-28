@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Category</title>
+</head>
+<body>
+  <h1>Form Category</h1>
+  <form  th:action="@{/admin/category/create}" method="post" th:object="${category}">
+      <input th:field="*{id}" hidden="">
+    <label >Category Name</label>
+    <input type="text" placeholder="Enter category name" th:field="*{name}">
+    <label >Category Name Khmer</label>
+    <input type="text" placeholder="Enter category name khmer" th:field="*{nameKh}">
+    <button >Create</button>
+  </form>
+</body>
+</html>
