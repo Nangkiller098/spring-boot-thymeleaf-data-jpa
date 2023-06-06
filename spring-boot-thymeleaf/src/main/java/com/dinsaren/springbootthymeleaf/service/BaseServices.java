@@ -10,6 +10,6 @@ public interface BaseServices<T>
     void create(T req);
     T update(Integer id);
     void delete(Integer id);
-    Category getById(Integer id);
+    T getById(Integer id);
 
 }
